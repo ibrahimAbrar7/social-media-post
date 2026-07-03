@@ -10,7 +10,7 @@ import activityRouter from "./routes/activityRoutes.js";
 import { initScheduler } from "./services/schedulerService.js";
 
 const app = express();
-
+console.log("Mongo URI:", process.env.MONGODB_URI);
 // Database connection
 await connectDB()
 
